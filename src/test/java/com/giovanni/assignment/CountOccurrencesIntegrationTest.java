@@ -1,9 +1,9 @@
-package com.giovanni.assignment.assignment;
+package com.giovanni.assignment;
 
-import com.giovanni.assignment.assignment.check.CountOccurrences;
-import com.giovanni.assignment.assignment.check.CountOccurrencesO_N;
-import com.giovanni.assignment.assignment.service.CountOccurrencesService;
-import com.giovanni.assignment.assignment.generatorList.LargeListGenerator;
+import com.giovanni.assignment.check.CountOccurrences;
+import com.giovanni.assignment.check.CountOccurrencesO_N;
+import com.giovanni.assignment.service.CountOccurrencesService;
+import com.giovanni.assignment.generatorList.LargeListGenerator;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -14,7 +14,7 @@ import java.util.List;
 import static org.junit.jupiter.api.Assertions.*;
 
 @ActiveProfiles("local")
-@SpringBootTest(classes = com.giovanni.assignment.assignment.AssignmentApplication.class)
+@SpringBootTest(classes = AssignmentApplication.class)
 class CountOccurrencesIntegrationTest {
 
   @Autowired

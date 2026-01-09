@@ -1,8 +1,8 @@
-package com.giovanni.assignment.assignment.configuration;
+package com.giovanni.assignment.configuration;
 
-import com.giovanni.assignment.assignment.check.CountOccurrences;
-import com.giovanni.assignment.assignment.check.CountOccurrencesO_N;
-import com.giovanni.assignment.assignment.generatorList.LargeListGenerator;
+import com.giovanni.assignment.check.CountOccurrences;
+import com.giovanni.assignment.check.CountOccurrencesO_N;
+import com.giovanni.assignment.generatorList.LargeListGenerator;
 import java.util.List;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

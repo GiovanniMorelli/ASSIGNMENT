@@ -1,4 +1,4 @@
-package com.giovanni.assignment.assignment.generatorList;
+package com.giovanni.assignment.generatorList;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,6 +1,6 @@
-package com.giovanni.assignment.assignment;
+package com.giovanni.assignment;
 
-import com.giovanni.assignment.assignment.service.CountOccurrencesService;
+import com.giovanni.assignment.service.CountOccurrencesService;
 import org.jspecify.annotations.NonNull;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

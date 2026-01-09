@@ -1,4 +1,4 @@
-package com.giovanni.assignment.assignment.check;
+package com.giovanni.assignment.check;
 
 import java.util.HashSet;
 import java.util.List;

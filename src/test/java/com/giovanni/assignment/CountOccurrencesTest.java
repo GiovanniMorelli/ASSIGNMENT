@@ -1,7 +1,7 @@
-package com.giovanni.assignment.assignment;
+package com.giovanni.assignment;
 
-import com.giovanni.assignment.assignment.check.CountOccurrences;
-import com.giovanni.assignment.assignment.check.CountOccurrencesO_N;
+import com.giovanni.assignment.check.CountOccurrences;
+import com.giovanni.assignment.check.CountOccurrencesO_N;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
