@@ -1,14 +1,13 @@
 package com.giovanni.assignment;
 
+import static org.junit.jupiter.api.Assertions.*;
+
 import com.giovanni.assignment.check.CountOccurrences;
 import com.giovanni.assignment.check.CountOccurrencesO_N;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
 import java.util.Arrays;
 import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 public class CountOccurrencesTest {
 
@@ -40,7 +39,8 @@ public class CountOccurrencesTest {
     CountOccurrences noDupONLogN = new CountOccurrences(noDupList);
     CountOccurrencesO_N noDupO_N = new CountOccurrencesO_N(noDupList);
 
-    assertFalse(noDupONLogN.checkOccurrences().hasDuplicate, "O(n log n) should detect no duplicates");
+    assertFalse(
+        noDupONLogN.checkOccurrences().hasDuplicate, "O(n log n) should detect no duplicates");
     assertFalse(noDupO_N.checkOccurrences().hasDuplicate, "O(n) should detect no duplicates");
   }
 }

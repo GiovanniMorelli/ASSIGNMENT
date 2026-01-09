@@ -1,33 +1,32 @@
 package com.giovanni.assignment;
 
+import static org.junit.jupiter.api.Assertions.*;
+
 import com.giovanni.assignment.check.CountOccurrences;
 import com.giovanni.assignment.check.CountOccurrencesO_N;
-import com.giovanni.assignment.service.CountOccurrencesService;
 import com.giovanni.assignment.generatorList.LargeListGenerator;
+import com.giovanni.assignment.service.CountOccurrencesService;
+import java.util.List;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 
-import java.util.List;
-
-import static org.junit.jupiter.api.Assertions.*;
-
 @ActiveProfiles("local")
 @SpringBootTest(classes = AssignmentApplication.class)
 class CountOccurrencesIntegrationTest {
 
-  @Autowired
-  private CountOccurrencesService countService;
+  @Autowired private CountOccurrencesService countService;
 
-  @Autowired
-  private LargeListGenerator largeListGenerator;
+  @Autowired private LargeListGenerator largeListGenerator;
 
   @Test
   void testBeansInjected() {
     assertNotNull(countService, "CountOccurrencesService bean should be injected");
-    assertNotNull(countService.hasDuplicates(), "CountOccurrences bean should be injected via service");
-    assertNotNull(countService.hasDuplicatesO_N(), "CountOccurrencesO_N bean should be injected via service");
+    assertNotNull(
+        countService.hasDuplicates(), "CountOccurrences bean should be injected via service");
+    assertNotNull(
+        countService.hasDuplicatesO_N(), "CountOccurrencesO_N bean should be injected via service");
     assertNotNull(largeListGenerator, "LargeListGenerator bean should be injected");
   }
 
